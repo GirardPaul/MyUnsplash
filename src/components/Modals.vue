@@ -1,10 +1,13 @@
 <script setup>
-import Home from './pages/Home.vue'
+import { ref } from 'vue'
+defineProps({
+})
 </script>
 
 <template>
-  <Home />
+
 </template>
 
 <style scoped>
+
 </style>
