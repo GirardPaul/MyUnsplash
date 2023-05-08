@@ -23,8 +23,8 @@ const openDeleteModal = () => {
     title="Add a new photo"
   ></Modals>
   <header>
-    <div class="flex justify-between align-center">
-      <div class="flex align-center flex-grow">
+    <div class="flex justify-between align-center header-content">
+      <div class="flex align-center flex-grow logo-search-content">
         <img src="src/assets/my_unsplash_logo.svg" alt="My Unsplash logo" />
         <InputText
           class="ml-4 input-search"
@@ -33,7 +33,9 @@ const openDeleteModal = () => {
           v-model="searchContent"
         />
       </div>
-      <Button type="success" @click="openCreateModal()">Add a photo</Button>
+      <Button class="btn" type="success" @click="openCreateModal()"
+        >Add a photo</Button
+      >
     </div>
   </header>
 </template>
@@ -55,5 +57,51 @@ header {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 1200px) {
+  header {
+    padding: 3.2rem 7rem 7.5rem 7rem;
+  }
+}
+@media screen and (max-width: 900px) {
+  header {
+    padding: 3.2rem 5rem 7.5rem 5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header-content > div:first-child {
+    width: 100%;
+  }
+  .input-search {
+    width: 100%;
+  }
+
+  .header-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .btn {
+    margin-top: 2rem;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .logo-search-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .input-search {
+    margin-left: 0;
+    margin-top: 2rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  header {
+    padding: 3.2rem 1.5rem 7.5rem 1.5rem;
+  }
 }
 </style>

@@ -67,4 +67,10 @@ const props = defineProps({
 .btn-sm {
   padding: 0.5rem 1.5rem;
 }
+
+@media screen and (max-width: 768px) {
+  .btn-lg {
+  padding: 1.2rem 2.6rem;
+}
+}
 </style>

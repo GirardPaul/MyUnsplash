@@ -72,4 +72,10 @@ span {
   border: 1px solid #4f4f4f;
   filter: drop-shadow(0px 1px 6px rgba(0, 0, 0, 0.1));
 }
+
+@media screen and (max-width: 768px) {
+  .input-container {
+    padding: 1.2rem;
+  }
+}
 </style>
