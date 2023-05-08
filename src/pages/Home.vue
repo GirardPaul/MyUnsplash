@@ -25,7 +25,7 @@ const openDeleteModal = () => {
   <header>
     <div class="flex justify-between align-center header-content">
       <div class="flex align-center flex-grow logo-search-content">
-        <img src="src/assets/my_unsplash_logo.svg" alt="My Unsplash logo" />
+        <img src="../assets/my_unsplash_logo.svg" alt="My Unsplash logo" />
         <InputText
           class="ml-4 input-search"
           icon="search"
